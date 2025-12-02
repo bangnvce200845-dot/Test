@@ -8,23 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <!-- Section for preview images -->
+
+        <!-- Preview images -->
         <div class="preview">
-            <img id="img1" src="アウラ.jpg" alt="Image 1" onmouseover="upDate(this)" onclick="upDate(this)">
-            <img id="img2" src="image-removebg-preview.png" alt="Image 2" onmouseover="upDate(this)" onclick="upDate(this)">
-            <img id="img3" src="Thiết kế chưa có tên.png" alt="Image 3" onmouseover="upDate(this)" onclick="upDate(this)">
+            <img src="aura.jpg" alt="Aura Character" onmouseover="upDate(this)" onmouseout="undo()">
+            <img src="image1.png" alt="Sample Image" onmouseover="upDate(this)" onmouseout="undo()">
+            <img src="image2.png" alt="Another Sample" onmouseover="upDate(this)" onmouseout="undo()">
         </div>
 
-        <!-- Section for the image display and undo action -->
-        <div id="image" class="display" onmouseout="undo()">
+        <!-- Display area -->
+        <div id="image" class="display">
             Hover over an image below to display here.
         </div>
 
-        <!-- Button to trigger undo function -->
-        <button onclick="undo()">Undo</button>
     </div>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="Java.js"></script>
 </body>
 </html>
