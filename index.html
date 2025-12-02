@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Section for preview images -->
+        <div class="preview">
+            <img id="img1" src="https://via.placeholder.com/150" alt="Image 1" onmouseover="upDate(this)" onclick="upDate(this)">
+            <img id="img2" src="https://via.placeholder.com/150" alt="Image 2" onmouseover="upDate(this)" onclick="upDate(this)">
+            <img id="img3" src="https://via.placeholder.com/150" alt="Image 3" onmouseover="upDate(this)" onclick="upDate(this)">
+        </div>
+
+        <!-- Section for the image display and undo action -->
+        <div id="image" class="display" onmouseout="undo()">
+            Hover over an image below to display here.
+        </div>
+
+        <!-- Button to trigger undo function -->
+        <button onclick="undo()">Undo</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
